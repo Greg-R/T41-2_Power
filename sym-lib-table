@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "R78CK3_3_0")(type "KiCad")(uri "/home/raven/gitrepos/pcb/downloaded_parts/KiCADv6/R_78CK3_3_0.kicad_sym")(options "")(descr ""))
+  (lib (name "IRF9010_dpack")(type "KiCad")(uri "/home/raven/gitrepos/pcb/downloaded_parts/KiCADv6/IRF9010_dpack.kicad_sym")(options "")(descr ""))
+  (lib (name "CDZVTR10B")(type "KiCad")(uri "/home/raven/gitrepos/pcb/downloaded_parts/KiCADv6/CDZVTR10B.kicad_sym")(options "")(descr ""))
+  (lib (name "LairdFerrBead")(type "KiCad")(uri "/home/raven/gitrepos/pcb/downloaded_parts/28F0121_0SR_10/28F0121-0SR-10.kicad_sym")(options "")(descr ""))
+)
