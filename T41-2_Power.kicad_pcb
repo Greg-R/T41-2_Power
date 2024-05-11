@@ -3561,6 +3561,7 @@
 		(property "Value" "R-78CK5.0-0.5"
 			(at 5.43 5.64 180)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "dd8503d1-1c8f-4b78-af37-be46ab134765")
 			(effects
 				(font
@@ -6481,6 +6482,7 @@
 		(property "Value" "R-78CK3.3-0.5"
 			(at 5.43 5.64 180)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b49d9492-80c1-48ee-b88b-bfb8190adb69")
 			(effects
 				(font
@@ -7136,7 +7138,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C18"
-			(at 0 -1.85 -90)
+			(at 1.325 -2.9 0)
 			(layer "F.SilkS")
 			(uuid "e7fef4e1-f0c7-4220-a07c-8318cddd167d")
 			(effects
@@ -7147,8 +7149,8 @@
 			)
 		)
 		(property "Value" "0.1uf"
-			(at 0 1.85 -90)
-			(layer "F.Fab")
+			(at -0.125 -3.35 0)
+			(layer "F.SilkS")
 			(uuid "f0ea908e-9023-4d45-a267-8b4259f56ae8")
 			(effects
 				(font

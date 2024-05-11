@@ -1,4 +1,4 @@
-23311820032028319
+23313535481331007
 28F0121_0SR_10
 FB_28F0121-0SR-10
 
@@ -85371,6 +85371,13 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+R_78CK5_0_0_5
+CONV_R-78CK5.0-0.5
+
+
+0
+3
+3
 Relay_SMD
 Relay_2P2T_10x6mm_TE_IMxxG
 Signal Relay, 10x6mm, 2 Form C, Gull Wings, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F108-98001%7FZ.1%7Fpdf%7FEnglish%7FENG_DS_108-98001_Z.1.pdf
