@@ -6,7 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "T41-2 Power Supply")
-		(date "2024-04-02")
+		(date "2024-05-11")
+		(rev "V1.0")
 		(company "Greg KF5N")
 	)
 	(lib_symbols
@@ -2899,6 +2900,18 @@
 			)
 		)
 		(uuid "3ec66827-84c7-46fc-9c83-2af340479799")
+	)
+	(text "5V OUT FOR DISPLAY"
+		(exclude_from_sim no)
+		(at 248.285 151.765 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+		)
+		(uuid "5f3c6e79-246e-42e4-a151-6bcb0a6a050b")
 	)
 	(text "PROTECT"
 		(exclude_from_sim no)
