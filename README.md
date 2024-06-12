@@ -6,7 +6,7 @@ The PCB was designed using the open-source design tool Kicad 8.  The github repo
 <https://github.com/Greg-R/T41-2_Power>
 
 The primary documentation for the T41 is the book "Digital Signal Processing and Software Defined Radio:
-Theory and Construction of the T41-EP Software Defined Transceiver" by Albert Peter and Jack Purdum.
+Theory and Construction of the T41-EP Software Defined Transceiver Third Edition" by Albert Peter and Jack Purdum.
 The book is available here:
 
 <https://www.amazon.com/Digital-Signal-Processing-Software-Defined/dp/B0D25FV48C>
@@ -18,7 +18,7 @@ hot!  This excess power dissipation increases the receiver current drain by a fa
 compared to the T41-2!  That is a serious problem when operating portable from a battery supply.
 
 The vast majority of the T41 current drain during receive is due to the Teensy and the display.
-As the T41 evolves, more features included in the software means Teensy power dissipation is
+As the T41 evolves, more features included in the software means Teensy power consumption is
 going to increase.  Also some builders are planning to use larger displays, thus increasing
 current drain and regulator dissipation even more.  Watch out, your fingers are in danger!
 
@@ -38,7 +38,8 @@ Another noise reduction feature of the T41-2 Power Supply is the +5 volt output 
 experiments have demonstrated a reduction in receiver noise by switching the display to 5 volts and routing
 the 5 volt supply directly to the display rather than through the Main board.  If this is attempted, the
 builder is advised to refer to the display's manual to understand the change necessary to power the display
-from 5 volts rather than the as-shipped 3.3 volts.
+from 5 volts rather than the as-shipped 3.3 volts.  A means of routing the 5 volts to the display must be
+devised, which means adding wires and cutting the 3.3 volt supply from the Main board.
 
 ## Gerber Files and PDF Schematic
 
@@ -57,12 +58,10 @@ board is routed via the 16-pin ribbon cable.  However there was no plug or jack 
 Since the board has the common 16-pin connector, it is possible to route the speaker outputs to a terminal.
 This is an improvement, as the board can be removed from the radio without having to unsolder the speaker wires.
 
-<https://drive.google.com/file/d/18EVahQOBdGZIAjiurM7DPEM1uzlL1K75/view?usp=drive_link>
-
 ### Hardware Modifications
 
 If you don't want to convert the display to 5 volts, the board will drop-in.  Please refer to the display
-documentation for 5 volt conversion instructions if you desired to make this modification.  You will have to
+documentation for 5 volt conversion instructions if you desire to make this modification.  You will have to
 solder wires to either the Main board or display in order to connect to the 5 volt output of the power supply.
 
 There is no modification required to the software.
@@ -80,6 +79,8 @@ A public Digikey BOM is here:
 
 <https://www.digikey.com/en/mylists/list/PVESXUZZUA>
 
+Please use the special low ESR/ESL bypass capacitors as specified in the BOM.  These parts improve the bypassing
+and decoupling of the switching power supply modules.
 
 ## Build Tips
 
