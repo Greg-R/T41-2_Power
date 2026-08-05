@@ -1811,9 +1811,9 @@
 		)
 		(uuid "0cbd3d6f-a6ab-43ce-8ac7-e34e1e7c440a")
 	)
-	(text "SPEAKER"
+	(text "+12V AUDIO\n    AMP"
 		(exclude_from_sim no)
-		(at 36.83 133.985 0)
+		(at 34.925 133.985 0)
 		(effects
 			(font
 				(size 2 2)
@@ -1879,7 +1879,7 @@
 		)
 		(uuid "3ec66827-84c7-46fc-9c83-2af340479799")
 	)
-	(text "5V OUT FOR DISPLAY"
+	(text "5V OUT"
 		(exclude_from_sim no)
 		(at 248.285 151.765 0)
 		(effects
@@ -1912,19 +1912,6 @@
 			)
 		)
 		(uuid "a443cc67-71fe-40a3-b403-a83de6180e37")
-	)
-	(text "The speaker is routed for V10/V11 only!\nDo not place E7, E8, C16, C17, and J2 for\nuse with the T41-2 Main Board."
-		(exclude_from_sim no)
-		(at 138.176 139.192 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.254)
-				(bold yes)
-				(color 255 4 30 1)
-			)
-		)
-		(uuid "b219073c-b3d2-4efe-80f1-3f8a3769c002")
 	)
 	(text "5.0 VOLT REGULATOR"
 		(exclude_from_sim no)
@@ -2034,12 +2021,6 @@
 		(uuid "bc6836f0-9ecc-4a1e-8580-6e8b679b26b6")
 	)
 	(junction
-		(at 71.12 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d81b7740-dc84-4adc-9c50-504cd34982b1")
-	)
-	(junction
 		(at 48.26 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2051,13 +2032,27 @@
 		(color 0 0 0 0)
 		(uuid "f14a2e2e-4bb2-429f-b5e7-f14a4ecd46bf")
 	)
+	(junction
+		(at 121.92 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f726c5f7-dd53-4d47-8df5-1d8a0604bc6f")
+	)
 	(no_connect
 		(at 77.47 149.86)
 		(uuid "7aff399c-0be5-40fc-a8cd-ea6dfb0261dd")
 	)
 	(no_connect
+		(at 90.17 152.4)
+		(uuid "a4bf75ee-6113-4711-9505-49cf9094c962")
+	)
+	(no_connect
 		(at 90.17 149.86)
 		(uuid "dbfd0376-a012-40eb-8383-1b5bb09592ce")
+	)
+	(no_connect
+		(at 77.47 152.4)
+		(uuid "f4f80f19-8938-431c-9f26-5b0c62fbfb83")
 	)
 	(wire
 		(pts
@@ -2078,16 +2073,6 @@
 			(type default)
 		)
 		(uuid "048d5339-4607-4843-b194-b2d4e32748bb")
-	)
-	(wire
-		(pts
-			(xy 77.47 152.4) (xy 71.12 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0491a8c2-3f34-45fb-b0d8-0f81e5a151e4")
 	)
 	(wire
 		(pts
@@ -2221,6 +2206,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 154.94) (xy 125.73 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24eaf6f0-2010-4f34-bf9d-f25079233517")
+	)
+	(wire
+		(pts
 			(xy 31.75 83.82) (xy 48.26 83.82)
 		)
 		(stroke
@@ -2271,6 +2266,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 134.62) (xy 52.07 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eb316fb-9f19-4775-8fb1-3ad53e7cec95")
+	)
+	(wire
+		(pts
 			(xy 114.935 77.47) (xy 104.775 77.47)
 		)
 		(stroke
@@ -2311,6 +2316,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 144.78) (xy 121.92 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3828cce3-7e90-425a-958b-cd93dc54e9f0")
+	)
+	(wire
+		(pts
 			(xy 114.935 85.09) (xy 114.935 86.36)
 		)
 		(stroke
@@ -2318,26 +2333,6 @@
 			(type default)
 		)
 		(uuid "3afef976-a01a-451e-be01-1fc32b939d43")
-	)
-	(wire
-		(pts
-			(xy 71.12 147.32) (xy 100.33 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41ef88cb-ca59-4869-89e7-75e34054b6ac")
-	)
-	(wire
-		(pts
-			(xy 104.775 141.605) (xy 99.695 141.605)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43743e15-32a0-48be-88e6-a416be9f1cc9")
 	)
 	(wire
 		(pts
@@ -2401,16 +2396,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 152.4) (xy 71.12 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a4f51b0-5822-4439-a578-b0af2dbaea1a")
-	)
-	(wire
-		(pts
 			(xy 137.795 77.47) (xy 137.795 80.01)
 		)
 		(stroke
@@ -2431,16 +2416,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.775 134.62) (xy 104.775 141.605)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e02cbea-ee92-4e12-8c27-419d8c77cc0a")
-	)
-	(wire
-		(pts
 			(xy 184.785 77.47) (xy 197.485 77.47)
 		)
 		(stroke
@@ -2448,16 +2423,6 @@
 			(type default)
 		)
 		(uuid "5e0669ed-a870-464e-bf9c-82b4ff9d22c5")
-	)
-	(wire
-		(pts
-			(xy 52.07 134.62) (xy 71.12 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6153d07a-80fd-4841-b7ac-bb853cfc011d")
 	)
 	(wire
 		(pts
@@ -2511,6 +2476,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 144.78) (xy 121.92 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6935da21-7cf6-4c1b-be29-627d0a0ef911")
+	)
+	(wire
+		(pts
 			(xy 222.25 144.78) (xy 231.14 144.78)
 		)
 		(stroke
@@ -2518,16 +2493,6 @@
 			(type default)
 		)
 		(uuid "6aa24a04-538c-4d5b-a1bd-47272afc952b")
-	)
-	(wire
-		(pts
-			(xy 71.12 134.62) (xy 71.12 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ad8a6b5-bd32-4c2b-b3f8-d52e81cf6eee")
 	)
 	(wire
 		(pts
@@ -2621,16 +2586,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 147.32) (xy 100.33 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7acc0a70-6436-45f6-8a51-d5e6bd830373")
-	)
-	(wire
-		(pts
 			(xy 227.965 77.47) (xy 227.965 80.01)
 		)
 		(stroke
@@ -2641,16 +2596,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 152.4) (xy 93.98 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ee456df-b79d-4113-9a6a-23e205cd72f7")
-	)
-	(wire
-		(pts
 			(xy 245.11 116.84) (xy 245.11 118.11)
 		)
 		(stroke
@@ -2658,16 +2603,6 @@
 			(type default)
 		)
 		(uuid "804d968f-3c46-44d2-80ea-0b54c97a578a")
-	)
-	(wire
-		(pts
-			(xy 93.98 152.4) (xy 93.98 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "805f5bd6-3395-4f5c-a1e2-30a20ea12d2e")
 	)
 	(wire
 		(pts
@@ -2791,27 +2726,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 144.78) (xy 111.76 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1e02196-8de9-469a-b24c-ff7685175ebf")
-	)
-	(wire
-		(pts
-			(xy 81.28 144.78) (xy 81.28 141.605)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9cdf723-a570-47cd-ba97-c24f32275a8f")
-	)
-	(wire
-		(pts
-			(xy 118.11 154.94) (xy 125.73 154.94)
+			(xy 118.11 154.94) (xy 121.92 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2878,6 +2793,16 @@
 			(type default)
 		)
 		(uuid "baeb0e9f-1640-452a-ad1b-682ad7846df3")
+	)
+	(wire
+		(pts
+			(xy 52.07 143.51) (xy 60.325 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf401a0e-a13c-48ff-a5b0-6aa2bc55620d")
 	)
 	(wire
 		(pts
@@ -2961,26 +2886,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 140.97) (xy 71.12 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c90c0fde-0427-44aa-858a-a2a8343cd019")
-	)
-	(wire
-		(pts
-			(xy 93.98 144.78) (xy 81.28 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce4f92f9-36b3-4085-81e8-e6c1ddcaf89a")
-	)
-	(wire
-		(pts
 			(xy 227.965 85.09) (xy 227.965 86.36)
 		)
 		(stroke
@@ -3051,26 +2956,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 143.51) (xy 60.325 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de066526-e571-4dbf-94a4-fe57b8bfc03c")
-	)
-	(wire
-		(pts
-			(xy 81.28 141.605) (xy 84.455 141.605)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e222c478-4521-45ec-b7b9-a761abaf3cf7")
-	)
-	(wire
-		(pts
 			(xy 227.965 109.22) (xy 227.965 111.76)
 		)
 		(stroke
@@ -3088,16 +2973,6 @@
 			(type default)
 		)
 		(uuid "f45faf77-7dbe-42ba-a2ea-b70fb6de4d5e")
-	)
-	(wire
-		(pts
-			(xy 71.12 134.62) (xy 104.775 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4e9441d-ffe4-434a-b3f1-decfce7102b5")
 	)
 	(wire
 		(pts
@@ -3142,7 +3017,7 @@
 		(uuid "1a93de94-f78e-49e3-82de-0493947510bd")
 	)
 	(label "GND"
-		(at 64.135 143.51 0)
+		(at 53.975 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4719,135 +4594,6 @@
 		)
 	)
 	(symbol
-		(lib_id "LairdFerrBead:28F0121-0SR-10")
-		(at 92.075 141.605 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ec62b60-db57-4a82-90cb-2c9600e88b79")
-		(property "Reference" "E8"
-			(at 92.075 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "28F0121-0SR-10"
-			(at 92.075 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "28F0121_0SR_10:FB_28F0121-0SR-10"
-			(at 92.075 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.075 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 92.075 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" "J"
-			(at 92.075 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 92.075 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "3.05 mm"
-			(at 92.075 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Laird"
-			(at 92.075 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "2"
-			(uuid "4d4bc860-eb67-4422-a06a-14f59d5d9c2a")
-		)
-		(pin "1"
-			(uuid "fc6804ee-2ab9-4aa7-a3ef-53262731ebe4")
-		)
-		(instances
-			(project "T41-2_Power"
-				(path "/d795d656-5ec1-49db-be74-df1df5d34ffe"
-					(reference "E8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 197.485 82.55 180)
 		(unit 1)
@@ -5698,88 +5444,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 71.12 138.43 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93b72f8d-2fe2-4c45-b952-123ccca75d40")
-		(property "Reference" "C17"
-			(at 74.295 137.1535 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1uf"
-			(at 74.295 139.6935 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 71.12 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 71.12 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "38bc6cfc-fdcc-45a1-b9fc-8f498b36de23")
-		)
-		(pin "2"
-			(uuid "6ffeaa90-5d96-4223-800e-790075b7d606")
-		)
-		(instances
-			(project "T41-2_Power"
-				(path "/d795d656-5ec1-49db-be74-df1df5d34ffe"
-					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 197.485 118.11 0)
 		(unit 1)
@@ -6466,7 +6130,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 46.99 134.62 180)
+		(at 46.99 132.08 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6476,7 +6141,7 @@
 		(dnp no)
 		(uuid "b556aa6f-29af-474c-bc1d-f30f97944aeb")
 		(property "Reference" "J2"
-			(at 46.99 126.365 0)
+			(at 46.99 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6486,7 +6151,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 46.99 128.905 0)
+			(at 38.735 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6496,7 +6161,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Philmore:TerminalBlock_Philmore_TB132_1x02_P5.00mm_Horizontal"
-			(at 46.99 134.62 0)
+			(at 46.99 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6507,7 +6172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 134.62 0)
+			(at 46.99 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6518,7 +6183,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 46.99 134.62 0)
+			(at 46.99 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
